@@ -2,15 +2,20 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Inter', sans-serif;
   background-color: #1F2937;
   color: #D5D4D8;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   flex-grow: 1;
 }
 
@@ -42,9 +47,9 @@ form {
 
 form input[type="color"] {
   padding: 0;
-  border: none;
+  border: 0;
   width: 20%;
-  height: 50px;
+  height: 100%;
   cursor: pointer;
   background-color: #1F293A;
   color: #D5D4D8;
