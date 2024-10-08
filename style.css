@@ -91,6 +91,12 @@ form button {
   font-size: 0.75rem;
   font-weight: 700;
   color: #D5D4D8;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.color-hex:hover {
+  opacity: 0.7;
 }
 
 .color-name {

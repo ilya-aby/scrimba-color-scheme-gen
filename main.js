@@ -15,6 +15,25 @@ function renderColorScheme(colorScheme) {
   }).join('');
 
   colorContainer.innerHTML = colorHtml;
+
+  // Add click event listeners to hex values
+  document.querySelectorAll('.color-hex').forEach(hexElement => {
+    hexElement.addEventListener('click', function() {
+      const hexValue = this.textContent;
+      navigator.clipboard.writeText(hexValue)
+        .then(() => {
+          // Provide visual feedback
+          const originalText = this.textContent;
+          this.textContent = 'Copied!';
+          setTimeout(() => {
+            this.textContent = originalText;
+          }, 1500);
+        })
+        .catch(err => {
+          console.error('Failed to copy text: ', err);
+        });
+    });
+  });
 }
 
 document.getElementById('color-form').addEventListener('submit', function(event) {
