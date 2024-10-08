@@ -8,12 +8,36 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  <header>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Color Schemer</h1>
+    </header>
+  </div>
   <main>
+    <div class="container">
+      <form id="color-form">
+        <input type="color" id="color-input" name="color" value="#F55A5A">
+        <select id="mode-select" name="mode">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit">Get Color Scheme</button>
+      </form>
+      <div class="color-container">
+      </div>
+    </div>
   </main>
   <footer>
   </footer>
