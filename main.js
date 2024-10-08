@@ -7,7 +7,7 @@ function renderColorScheme(colorScheme) {
   const colorHtml = colorScheme.map(color => {
       return `
         <div class="color-item">
-          <div class="color" style="background-color: ${color.hex.value}"></div>
+          <div class="color-bar" style="background-color: ${color.hex.value}"></div>
           <p class="color-hex">${color.hex.value}</p>
           <p class="color-name">${color.name.value}</p>
         </div>
