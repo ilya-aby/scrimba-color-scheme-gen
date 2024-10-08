@@ -7,6 +7,11 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1F2937;
   color: #D5D4D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 
 header {
@@ -28,8 +33,8 @@ form {
 form input[type="color"] {
   padding: 0;
   border: none;
-  width: 51px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background-color: #1F293A;
   color: #D5D4D8;
