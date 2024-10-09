@@ -2,7 +2,7 @@
 
 Color scheme generator, made for the Scrimba front-end developer course. Built with HTML, CSS, and JavaScript. Uses the [Color API](https://www.thecolorapi.com/) to generate complementary colors.
 
-![GIF](images/app-animation.gif)
+![GIF](/app-animation.gif)
 
 ## Features
 
